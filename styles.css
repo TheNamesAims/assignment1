@@ -1,0 +1,290 @@
+
+li{
+    display: inline;
+}
+
+.topnav a:link {
+    text-decoration: none;
+    color: black;
+}  
+/*removing the automated purple color when a page is visited 
+so that users have a better user experience with the theme staying consistent*/
+.topnav a:visited {
+    text-decoration: none;
+    color: black;
+}
+/*hover effect to show where the mouse is hovering over a page so users can see where they are able to click*/
+.topnav a:hover {
+    color: #009e1a;
+}
+/*page underlined when active so users can easily identify what page they are currently viewing*/
+.topnav a.active {
+  text-decoration: underline;
+}
+
+#hometitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerlink a:link{
+    text-decoration: none;
+    color: black;
+}
+.footerlink a:hover {
+    color: #009e1a;
+}
+.footerlink a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+img { /*border to evenly space images colored white so they still fit the page*/
+    width: 100%;
+    height: auto;
+    border: 5px solid white;
+}
+
+form{ /*Form settings made to fit the rest of the style on the page*/
+    text-align: center;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    margin:auto;
+
+}
+/*media queries for mobile tablet and desktop so the layout can display images in gallery well */
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: display changed to a single column of images 
+    so they can appear larger and more accessible to the user*/
+    .galleryboxes{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    h1{
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif; 
+        /*consistent use of a font family so that the site has a good flow to improve user experience*/
+        font-weight: 700;
+        font-size:  50px; 
+        /*smaller font sizes on mobile so they don't take up to mush space on the screen*/
+    }
+
+    h2{
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 700;
+        font-size:  30px;
+    }
+
+    p{
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 700;
+        font-size:  20px;
+    }
+    .topnav { 
+        /*top nav changed for each device to change relative text size, 
+        also places inside a flexbox to create responsive text that fits the screen size well*/
+        width:50%;
+        list-style: none;
+        margin: auto;
+        padding: 0;
+        position: sticky;
+        text-align: center;
+        padding: 12px;
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .aboutboxes{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1119px) {
+   /* For tablet: altered font sizes and image layout to better fit the size of a tablet screen  */
+.galleryboxes{
+    /*different containers used for gallery pages to create a 2 column 
+    table displaying the design style and the designs side by side so they 
+    can still be viewed largely but without the images taking over the page*/
+    clear:both;
+    display: table;
+}
+.title{
+    float: left;
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+}
+.sketches{
+    float: right;
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+    
+}
+h1{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size:  80px;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size:  40px;
+}
+
+p{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size:  25px;
+}
+.topnav {
+    width:50%;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    position: sticky;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutboxes{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+}
+.portrait{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+}
+}
+
+
+
+@media only screen and (min-width:1200px){
+    /* For desktop: largest font size so that the page can be easily viewed 
+    on a large screen with 3 columns of images in the gallery to use the most of the space and display images evenly*/
+.galleryboxes{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.photobox1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 33.33%;
+}
+.photobox2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 33.33%;
+}
+.photobox3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 33.33%;
+}
+h1{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size:  100px;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size:  50px;
+}
+
+p{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size:  35px;
+}
+.topnav {
+    width:50%;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    position: sticky;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutboxes{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+}
+.portrait{ 
+    /*about page displayed side by side in laptop version to use 
+    the horizontal space well so users can see everything on the page more evenly*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+}
+}
