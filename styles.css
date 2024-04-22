@@ -40,7 +40,7 @@ so that users have a better user experience with the theme staying consistent*/
 }
 
 img { /*border to evenly space images colored white so they still fit the page*/
-    width: 100%;
+    width: 70%;
     height: auto;
     border: 5px solid white;
 }
